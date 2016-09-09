@@ -1,0 +1,57 @@
+.forma {
+	margin: 0 auto;
+	width: 40%;
+	font-size: 16px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.main-title {
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+.subtitle {
+	font-size: 14px;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.list-title {
+	font-size: 18px;
+	margin: 17px 0;
+}
+label {
+	margin: 5px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.btnInput {
+	width: 300px;
+	margin: 40px auto;
+	display: block;
+	padding: 15px;
+	background-color: #cfe2f3;
+	border: 3px solid #000;
+	cursor: pointer;
+	font-size: 18px;
+	transition: all 0.5s ease;
+}
+.btnInput:hover {
+	background-color: #ebf3fa;
+}
+/*checkbox styly*/
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+	margin: 10px 0;
+}
+
+/*media queries*/
+@media only screen and (max-width: 450px) {
+	.forma {
+		width: 250px;
+	}
+}
