@@ -66,12 +66,10 @@ var strSelected = JSON.stringify(selectedItems);
 //проверяем ответы
 	if (strSelected == strAnswers) {
 		$('.modal p').text('Это победа!');
-		console.log('yes');
 	} else {
-		console.log('no');
 		$('.modal p').text('Попробуй ещё..');
 	}
-
+//показываем модальное окно
 $('.modal').css('display', 'block');
 //очистить чекбоксы
 $('input:checkbox').removeAttr('checked');
