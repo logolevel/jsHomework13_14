@@ -7,41 +7,40 @@
 </head>
 <body>
 	
-<!-- <script type="text/template" id="test">
-	<% for (var i = 0; i < data.length; i++) {  %>
-		<h1><%= data[i].title %></h1>
-		<p><%= data[i].content %></p>
-	<% } %>
-</script> -->
 <div id="container">
+<!-- modal window -->
+<div class="modal">
+	<p></p>
+	<span class="close-modal">[X]</span>
+</div>
 
-
+<!-- test -->
 <script type="text/template" id="test">
 	<form class="forma" id="testForm" action="#">
 		<h3 class="main-title">Тест по программированию</h3>
 		<h2 class="subtitle">Преобразование типов</h2>
 		
 		  <% for (var i = 0; i < data.length; i++) { %>
-		  <p class="list-title">Вопрос: <%= data[i].question_1 %></p>
+		  <p class="list-title">Вопрос : <%= data[i].question_1 %> = ?</p>
 		  <ol>
 			  <li>
 			  	<label>
-						<input type="checkbox" name="test-check">
+						<input class="inputs" type="checkbox" name="test-check" value="one">
 						<%= data[i].variant_1 %>
 			  	</label>
 			  </li>
 			  <li>
 					<label>
-						<input type="checkbox" name="test-check">
+						<input class="inputs" type="checkbox" name="test-check" value="two">
 						<%= data[i].variant_2 %>
 					</label>
 			  </li>
 			  <li>
 					<label>
-						<input id="third" type="checkbox" name="test-check">
+						<input class="inputs" type="checkbox" name="test-check" value="three">
 						<%= data[i].variant_3 %>
 					</label>
-			  </li>  
+			  </li>
 			</ol>
 		  <% } %>
 	<input class="btnInput" type="submit" value="Проверить мои результаты">
@@ -53,7 +52,6 @@
 
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/tmpl/tmpl.js"></script>
-<!-- <script src="libs/lodash/lodash.js"></script> -->
 <script src="js/script.js"></script>
 </body>
 </html>
